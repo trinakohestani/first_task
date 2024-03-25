@@ -1,3 +1,4 @@
+ 
 # What a Data Analyst does
 
 // Create insights from data to make informed business decisions
@@ -9,3 +10,4 @@
 5. Analyse data
 6. Interpret data to find patterns and trends
 7. Present / visualise data 
+ 
