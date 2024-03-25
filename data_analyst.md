@@ -1,7 +1,13 @@
-# Task list for Data Analyst
-1. Collect Data
-2. Clean Data
-3. Analyze Data 
-4. Interpret Data
-5. Visualize Results
-6. Interpret Results
+ 
+# What a Data Analyst does
+
+// Create insights from data to make informed business decisions
+
+1. Indentify data that should be analysed
+2. Collect the data 
+3. Clean data
+4. Model data
+5. Analyse data
+6. Interpret data to find patterns and trends
+7. Present / visualise data 
+ 
