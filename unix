@@ -1,0 +1,95 @@
+Last login: Thu Mar 28 14:34:19 on ttys000
+trinakohestani@Trinas-Air ~ % pwd
+/Users/trinakohestani
+trinakohestani@Trinas-Air ~ % ls
+Desktop		Downloads	Movies		Pictures
+Documents	Library		Music		Public
+trinakohestani@Trinas-Air ~ % cd
+trinakohestani@Trinas-Air ~ % cd 
+trinakohestani@Trinas-Air ~ % cd Documents 
+trinakohestani@Trinas-Air Documents %   pwd
+/Users/trinakohestani/Documents
+trinakohestani@Trinas-Air Documents % cd..
+zsh: command not found: cd..
+trinakohestani@Trinas-Air Documents % cd ..
+trinakohestani@Trinas-Air ~ % mkdir neuefische_demo
+trinakohestani@Trinas-Air ~ % ls
+Desktop		Downloads	Movies		Pictures	neuefische_demo
+Documents	Library		Music		Public
+trinakohestani@Trinas-Air ~ % cd neuefische_demo 
+trinakohestani@Trinas-Air neuefische_demo % ls
+trinakohestani@Trinas-Air neuefische_demo % ls -a
+.	..
+trinakohestani@Trinas-Air neuefische_demo % mkdir unixstuff
+trinakohestani@Trinas-Air neuefische_demo % ls
+unixstuff
+trinakohestani@Trinas-Air neuefische_demo % cd unixstuff
+trinakohestani@Trinas-Air unixstuff % mkdir backups
+trinakohestani@Trinas-Air unixstuff % ls -a
+.	..	backups
+trinakohestani@Trinas-Air unixstuff % cd .
+trinakohestani@Trinas-Air unixstuff % cd ..
+trinakohestani@Trinas-Air neuefische_demo % pwd
+/Users/trinakohestani/neuefische_demo
+trinakohestani@Trinas-Air neuefische_demo % cd
+trinakohestani@Trinas-Air ~ % ls neuefische_demo
+unixstuff
+trinakohestani@Trinas-Air ~ % ls neuefische_demo/unixstuff
+backups
+trinakohestani@Trinas-Air ~ % ls ~
+Desktop		Downloads	Movies		Pictures	neuefische_demo
+Documents	Library		Music		Public
+trinakohestani@Trinas-Air ~ % ls ~/..
+Shared		trinakohestani
+trinakohestani@Trinas-Air ~ % ls
+Desktop		Downloads	Movies		Pictures	neuefische_demo
+Documents	Library		Music		Public		science.txt
+trinakohestani@Trinas-Air ~ % cd ~/unixstuff
+cd: no such file or directory: /Users/trinakohestani/unixstuff
+trinakohestani@Trinas-Air ~ % cd ~/neuefische_demo/unixstuff
+trinakohestani@Trinas-Air unixstuff % cp ~/science.txt
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-aclpSsvXx] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-aclpSsvXx] source_file ... target_directory
+trinakohestani@Trinas-Air unixstuff % ls
+backups
+trinakohestani@Trinas-Air unixstuff % cp ~/science.txt .
+trinakohestani@Trinas-Air unixstuff % ls
+backups		science.txt
+trinakohestani@Trinas-Air unixstuff % mkdir science.bak             
+trinakohestani@Trinas-Air unixstuff % ls
+backups		science.bak	science.txt
+trinakohestani@Trinas-Air unixstuff % cd ~/science.bak
+cd: no such file or directory: /Users/trinakohestani/science.bak
+trinakohestani@Trinas-Air unixstuff % cd ~/neuefische_demo/unixstuff/science.bak
+trinakohestani@Trinas-Air science.bak % cp ~/science_txt .
+cp: /Users/trinakohestani/science_txt: No such file or directory
+trinakohestani@Trinas-Air science.bak % cp ~/science.txt . 
+trinakohestani@Trinas-Air science.bak % mv science.bak backups/.
+mv: rename science.bak to backups/.: No such file or directory
+trinakohestani@Trinas-Air science.bak % cd ~/unixstuff                            
+cd: no such file or directory: /Users/trinakohestani/unixstuff
+trinakohestani@Trinas-Air science.bak % cd ..
+trinakohestani@Trinas-Air unixstuff % mv science.bak backups/.
+trinakohestani@Trinas-Air unixstuff % ls
+backups		science.txt
+trinakohestani@Trinas-Air unixstuff % ls backups
+science.bak
+trinakohestani@Trinas-Air unixstuff % % cp science.txt tempfile.txt
+% ls
+% rm tempfile.txt
+% ls
+fg: no current job
+fg: no current job
+fg: no current job
+fg: no current job
+trinakohestani@Trinas-Air unixstuff % cp science.txt tempfile.txt
+trinakohestani@Trinas-Air unixstuff % ls
+backups		science.txt	tempfile.txt
+trinakohestani@Trinas-Air unixstuff % rm tempfile.txt
+trinakohestani@Trinas-Air unixstuff % ls
+backups		science.txt
+trinakohestani@Trinas-Air unixstuff % mkdir tempstuff
+trinakohestani@Trinas-Air unixstuff % ls
+backups		science.txt	tempstuff
+trinakohestani@Trinas-Air unixstuff % rmdir tempstuff
+trinakohestani@Trinas-Air unixstuff % 
